@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Postador de Conteúdo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+  <main>
+    <section class="form-section">
+      <h1>Crie seu post</h1>
+      <form id="form-post">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" required>
+
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+
+        <label for="conteudo">Conteúdo:</label>
+        <textarea id="conteudo" rows="5" required></textarea>
+
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i> Postar
+        </button>
+      </form>
+    </section>
+
+    <section class="posts-section">
+      <h2>Postagens</h2>
+      <div id="posts-container"></div>
+    </section>
+
+    <section class="aside-section">
+      <h2>Informações adicionais</h2>
+      <p>Esta área pode exibir estatísticas, perfil do usuário ou outras funcionalidades futuras.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
